@@ -1,23 +1,40 @@
-class MultiplicationTablee
- {
-    void printTable() 
-	{
-       	 printTable(3);
-   	 }
-    void printTable(int number)
-	 {
-        	System.out.println("Multiplication table for " + number + ":");
-        	for (int i = 1; i <= 10; i++) {
-           	System.out.println(number + " x " + i + " = " + (number * i));
-        }
-                System.out.println(); 
+class Mul
+{
+  int n,m,j;
+  void multi()
+  {
+    for(int i=1;i<=10;i++)
+    {
+      System.out.println("3 * "+i+" = "+3*i);
     }
-
-    public static void main(String[] args) 
-	{
-       		 MultiplicationTablee table = new MultiplicationTablee();
-        	 table.printTable(3);  
-        	 table.printTable(7);   
-        	 table.printTable(9);  
-        }
+  }
+  void multi(int x)
+  {
+    n=x;
+    for(int i=1;i<=10;i++)
+    {
+      System.out.println(n+" * "+i+" = "+n*i);
+    }
+  }
+  void multi(int w, int y)
+  {
+    m=w;
+    j=y;
+    for(int i=1;i<=j;i++)
+    {
+      System.out.println(m+" * "+i+" = "+m*i);
+    } 
+  }
+}
+class Multilicationtablemthodconstructor
+{
+  public static void main(String arg[])
+  {
+    Mul obj=new Mul();
+    obj.multi(); 
+    System.out.println();
+    obj.multi(7);
+    System.out.println();
+    obj.multi(9,10);
+  }
 }
